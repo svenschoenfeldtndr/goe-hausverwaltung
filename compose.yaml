@@ -1,0 +1,14 @@
+services:
+  immopilot:
+    build: .
+    ports:
+      - "3000:10000"
+    environment:
+      ADMIN_USER: admin
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Set ADMIN_PASSWORD in shell or .env}
+      COOKIE_SECURE: "0"
+    volumes:
+      - immopilot-data:/var/data
+    restart: unless-stopped
+volumes:
+  immopilot-data:
