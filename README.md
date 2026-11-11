@@ -55,3 +55,12 @@ npm run check
 ```
 
 Der Docker-Build ist hier nicht live auf einer Docker-Engine getestet worden.
+
+## Version 2.2 – Dashboard und Darstellung
+
+- Kennzahlen-Kacheln auf dem Dashboard sind vollständig anklickbar und führen direkt zu Immobilien, Mietern, Mietbuchhaltung oder Schadensmeldungen.
+- Schnellzugriff auf Mietverträge, Mahnwesen, Dokumente und Nebenkosten.
+- Überarbeitetes responsives Layout mit besserer visueller Hierarchie, Hover- und Tastatur-Fokuszuständen.
+- Die Rollenberechtigungen bleiben unverändert; schreibgeschützte Benutzer erhalten keinen Hinzufügen-Button in den Stammdatenansichten.
+
+Nach dem Upload zu GitHub baut Render bei aktiviertem Auto-Deploy das Docker-Image erneut. Bestehende Daten auf dem persistenten Render-Datenträger bleiben erhalten.
